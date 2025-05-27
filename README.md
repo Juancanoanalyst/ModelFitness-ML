@@ -126,8 +126,8 @@ Estos resultados indican que el modelo tiene **gran capacidad para identificar u
 ---
 
 ## 👨‍💻 Autor
-
-```text
+Juan Pablo Cano 
+Data Analyst
 Juan Cano  
 Data Analyst | Machine Learning Enthusiast  
 📧 jpcano983@gmail.com  
