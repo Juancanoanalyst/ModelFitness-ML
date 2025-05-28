@@ -1,103 +1,94 @@
-# 🏋️‍♂️ Predicción de Deserción de Usuarios en un Gimnasio con Machine Learning
+# 🏋️‍♂️ Gym User Churn Prediction with Machine Learning
 
-Este proyecto utiliza técnicas de aprendizaje automático para predecir si un usuario de un gimnasio abandonará el servicio. A través del análisis exploratorio de datos, la ingeniería de características y el entrenamiento de modelos de clasificación, se busca proporcionar a la empresa una herramienta que le permita **anticipar la pérdida de clientes** y tomar decisiones proactivas para aumentar la retención.
-
----
-
-## 📂 Contenido del Proyecto
-
-- Análisis exploratorio de datos (EDA)
-- Visualización de correlaciones e insights clave
-- Limpieza y transformación de datos
-- Entrenamiento y evaluación de modelos
-- Interpretación de resultados
-- Visualización de métricas clave
+This project employs machine learning techniques to forecast whether a gym user will discontinue their service. Through exploratory data analysis (EDA), feature engineering, and the training of classification models, the aim is to equip the business with a tool to **anticipate customer attrition** and facilitate proactive decision-making for enhanced retention.
 
 ---
 
-## 📊 Principales Gráficas
+## 📂 Project Contents
 
-
-
-### **Comparación entre contrato y retención**
-   > 📌 Estas gráfica muestra cómo varía la retención según el tipo de contrato.
-
-
-<p align="center">
-  <img src="images/1.png" alt="Comparación entre contrato y retención" width="75%" >
-</p>
-
-
-### **Distribución de visitas semanales**
-   > 📌 Permite observar la relación entre la frecuencia de asistencia y la probabilidad de cancelación.
-
-<p align="center">
-  <img src="images/3.png" alt=" frecuencia de asistencia y la probabilidad de cancelación" width="75%" >
-</p>
-
-
-### **Heatmap de correlaciones**
-   > 📌 Indica las variables más correlacionadas con la cancelación de membresía.
-
-<p align="center">
-  <img src="images/4.png" alt="variables más correlacionadas con la cancelación de membresía" width="75%" >
-</p>
-
-### **Comparación entre duración y retención**
-   > 📌 Resalta cómo el tiempo total como cliente afecta la probabilidad de permanencia.
-
-<p align="center">
-  <img src="images/2.png" alt="Comparación entre contrato y finalizacion del mismo" width="75%" >
-</p>
-
-
+- Exploratory Data Analysis (EDA)
+- Visualization of correlations and key insights
+- Data cleaning and transformation
+- Model training and evaluation
+- Results interpretation
+- Visualization of key metrics
 
 ---
 
-## 🤖 Modelos de Machine Learning
+## 📊 Key Visualizations
 
-Se entrenaron y compararon varios modelos para predecir la retención de usuarios:
+### **Contract Type vs. Retention**
+> 📌 This visualization illustrates how retention varies based on the contract type.
 
-- **Regresión Logística**
+<p align="center">
+  <img src="images/1.png" alt="Contract Type vs. Retention" width="75%" >
+</p>
+
+### **Weekly Visits Distribution**
+> 📌 This allows observation of the relationship between attendance frequency and the likelihood of cancellation.
+
+<p align="center">
+  <img src="images/3.png" alt="Weekly Attendance vs. Cancellation Probability" width="75%" >
+</p>
+
+### **Correlation Heatmap**
+> 📌 This indicates the variables most correlated with membership cancellation.
+
+<p align="center">
+  <img src="images/4.png" alt="Correlation Heatmap of Cancellation Drivers" width="75%" >
+</p>
+
+### **Tenure vs. Retention**
+> 📌 This highlights how the total time as a customer affects the probability of staying.
+
+<p align="center">
+  <img src="images/2.png" alt="Tenure vs. Retention" width="75%" >
+</p>
+
+---
+
+## 🤖 Machine Learning Models
+
+Several models were trained and compared to predict user retention:
+
+- **Logistic Regression**
 - **Random Forest**
 
-> 📈 El modelo de Random Forest alcanzó una precisión destacada, identificando correctamente patrones de deserción con alta confiabilidad.
+> 📈 The Random Forest model achieved notable accuracy, correctly identifying churn patterns with high reliability.
 
-### 🎯 **Curva ROC - Random Forest**
-
-<p align="center">
-  <img src="images/5.png" alt="Curva ROC - Random Forest" width="75%" >
-</p>
-
-
-### 🧮 **Matriz de Confusión - Random Forest**
+### 🎯 **ROC Curve - Random Forest**
 
 <p align="center">
-  <img src="images/6.png" alt="Matriz de Confusión - Random Forest" width="75%" >
+  <img src="images/5.png" alt="ROC Curve - Random Forest" width="75%" >
 </p>
 
+### 🧮 **Confusion Matrix - Random Forest**
+
+<p align="center">
+  <img src="images/6.png" alt="Confusion Matrix - Random Forest" width="75%" >
+</p>
 
 ---
 
-## 🧠 Resultados Clave
+## 🧠 Key Findings
 
-### 🤖 **Clusters usuarios**
+### 🤖 **User Clusters**
 
 <p align="center">
-  <img src="images/7.png" alt="Dendograma" width="75%" >
+  <img src="images/7.png" alt="Dendrogram" width="75%" >
 </p>
 
-- **Modelo utilizado**: Random Forest
+- **Model Used**: Random Forest
 - **Accuracy**: 91%
 - **Recall**: 81.3%
 - **Precision**: 83.8%
-- **AUC - ROC**: 0.97 (Excelente discriminación)
+- **AUC - ROC**: 0.97 (Excellent discrimination)
 
-Estos resultados indican que el modelo tiene **gran capacidad para identificar usuarios que probablemente abandonen el gimnasio**, permitiendo estrategias de fidelización más efectivas.
+These results indicate that the model has a **strong capability to identify users likely to churn**, enabling more effective loyalty strategies.
 
 ---
 
-## 🛠️ Herramientas Utilizadas
+## 🛠️ Tools Used
 
 - Python 🐍
 - Pandas, NumPy
@@ -107,27 +98,27 @@ Estos resultados indican que el modelo tiene **gran capacidad para identificar u
 
 ---
 
-## 📈 Aplicaciones Potenciales
+## 📈 Potential Applications
 
-- Segmentación de clientes por riesgo de abandono.
-- Automatización de alertas para el área de retención.
-- Análisis de impacto de promociones o cambios operativos.
-- Mejora de la experiencia del cliente basada en datos.
-
----
-
-## ✅ Conclusión
-
-- Se identificaron los principales factores que predicen la retención de clientes.
-- El modelo predictivo puede implementarse para alertar sobre posibles cancelaciones futuras.
-- Esto permite diseñar estrategias de retención personalizadas y mejorar la experiencia del cliente.
-- Con este enfoque, la empresa puede reducir su tasa de deserción y mejorar su rentabilidad a largo plazo.
+- Customer segmentation by churn risk.
+- Automation of alerts for the retention team.
+- Impact analysis of promotions or operational changes.
+- Data-driven improvement of customer experience.
 
 ---
 
-## 👨‍💻 Autor
-Juan Cano  
-Data Analyst | Machine Learning Enthusiast  
-📧 jpcano983@gmail.com  
-🔗 [GitHub](https://github.com/Juancanoanalyst)  
-🔗 [LinkedIn](https://www.linkedin.com/in/juan-pablo-cano-chaparro/)  
+## ✅ Conclusion
+
+- Key factors predicting customer retention were identified.
+- The predictive model can be implemented to flag potential future cancellations.
+- This allows for the design of personalized retention strategies and improved customer experience.
+- With this approach, the business can reduce its churn rate and improve long-term profitability.
+
+---
+
+## 👨‍💻 Author
+Juan Cano
+Data Analyst | Machine Learning Enthusiast
+📧 jpcano983@gmail.com
+🔗 [GitHub](https://github.com/Juancanoanalyst)
+🔗 [LinkedIn](https://www.linkedin.com/in/juan-pablo-cano-chaparro/)
